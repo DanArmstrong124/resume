@@ -214,7 +214,8 @@ footer .cv-pdf i:hover {
     height: 32px;
     padding: 9px 0px;
     border-radius: 50%;
-    font-size: 13px line-height: 7px;
+    font-size: 13px;
+    line-height: 7px;
     text-align: center;
     color: #fafafa;
     background: #8f8f8f;
