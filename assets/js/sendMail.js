@@ -2,6 +2,8 @@ function sendMail(contactForm){
 var template_params = {
     "from_name": contactForm.name.value,
     "from_email": contactForm.email.value,
+    "from_mobile": contactForm.mobile.value,
+    "deadline": contactForm.deadline.value,
     "project_request": contactForm.projectsummary.value
 }
 
