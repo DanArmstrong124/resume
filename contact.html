@@ -5,23 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
     <script type="text/javascript">
         (function() {
             emailjs.init("user_xzRZUBK5nZNLkwUF9eHin");
         })();
     </script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function onSubmit(token) {
+            document.getElementById("captcha").submit();
+        }
+    </script>
+
+
     <title>DanCodes - Contact</title>
 </head>
 
 <body>
-
-
     <!--Header-->
     <header class="container-fluid">
         <div class="row">
@@ -59,11 +66,8 @@
                     </ul>
                 </div>
             </div>
-
         </div>
-
     </header>
-
 
     <!--Section-->
     <section class="container-fluid">
@@ -73,18 +77,19 @@
                 <h5 class="uppercase tac">Let's work together!</h5>
             </div>
             <div class="center-form">
-                <form onsubmit="return sendMail(this);" method="POST">
+                <form id="captcha" onsubmit="return sendMail(this);" method="POST">
                     <input type="text" name="name" class="form-control" id="fullname" placeholder="Full Name" required/>
                     <input type="text" name="email" class="form-control" id="email" placeholder="Email" required/>
-                    <input type="text" name="mobile" class="form-control" id="mobile" placeholder="Phone Number"/>
-                    <input type="text" name="deadline" class="form-control" id="deadline" placeholder="Deadline for project"/>
+                    <input type="text" name="mobile" class="form-control" id="mobile" placeholder="Phone Number" />
+                    <input type="text" name="deadline" class="form-control" id="deadline" placeholder="Deadline for project" />
                     <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Description" required></textarea>
-                    <button type="submit" class="btn btn-success center-block">Send Project Request</button>
+                    <button type="submit" class="btn btn-success center-block g-recaptcha" data-sitekey="6Ld5rqAUAAAAAAzBM9kjDGpj0I5eaMdrPjDEpWtZ" data-callback='onSubmit'>Send Project Request</button>
                 </form>
+                <h3 class="invisable tac uppercase" id="details-sent">Details Sent! Please check your inbox for confirmation.</h3>
+                <p class="invisable tac uppercase" id="up-to-5">may take up to 5 mins</p>
             </div>
         </div>
     </section>
-
 
     <!--Footer-->
     <footer class="container-fluid tac">

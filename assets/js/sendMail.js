@@ -1,15 +1,21 @@
-function sendMail(contactForm){
+function sendMail(contactForm) {
 
-var template_params = {
-   "from_name": contactForm.name.value,
-   "from_email": contactForm.email.value,
-   "project_request": contactForm.projectrequest.value,
-   "deadline": contactForm.deadline.value,
-   "from_mobile": contactForm.mobile.value
-}
-
-var service_id = "default_service";
-var template_id = "danielarmstrong";
-emailjs.send(service_id, template_id, template_params);
-
+    emailjs.send("gmail", "danielarmstrong", {
+            "from_name": contactForm.name.value,
+            "from_email": contactForm.email.value,
+            "from_mobile": contactForm.mobile.value,
+            "deadline": contactForm.deadline.value,
+            "project_request": contactForm.projectsummary.value
+        })
+        .then(
+            function(response) {
+                console.log("SUCCESS", response);
+                $("#details-sent").removeClass("invisable").addClass("visable");
+                $("#up-to-5").removeClass("invisable").addClass("visable");
+            },
+            function(error) {
+                console.log("FAILED", error);
+            }
+        );
+    return false; // To block from loading a new page
 }
