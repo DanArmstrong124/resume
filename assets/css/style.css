@@ -70,7 +70,7 @@ header {
 
 .logo {
     background: url(../images/me.png);
-    background-position: left;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
     background-color: transparent;
@@ -436,3 +436,13 @@ div#map {
 }
 
 /*----------------------------------------------------------------------------------------------------*/
+
+/*---404 NOT FOUND---*/
+
+#404 {
+    color: white;
+}
+
+#404background {
+    background-color: black;
+}
