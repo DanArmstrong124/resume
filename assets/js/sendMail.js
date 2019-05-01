@@ -12,6 +12,7 @@ function sendMail(contactForm) {
                 console.log("SUCCESS", response);
                 $("#details-sent").removeClass("invisable").addClass("visable");
                 $("#up-to-5").removeClass("invisable").addClass("visable");
+                setTimeout(location.reload.bind(location), 600);
             },
             function(error) {
                 console.log("FAILED", error);
