@@ -101,6 +101,18 @@ header {
     color: white;
 }
 
+.backgroundheader {
+    background: url(../images/backgroundheader.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    min-height: 360px;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
 /*----------------------------------------------------------------------------------------------------MENU*/
 
 #nav {
