@@ -5,7 +5,8 @@ function sendMail(contactForm) {
             "from_email": contactForm.email.value,
             "from_mobile": contactForm.mobile.value,
             "deadline": contactForm.deadline.value,
-            "project_request": contactForm.projectsummary.value
+            "project_request": contactForm.projectsummary.value,
+            "discount": contactForm.discount.value
         })
         .then(
             function(response) {
