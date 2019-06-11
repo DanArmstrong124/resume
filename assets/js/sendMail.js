@@ -23,17 +23,17 @@ function sendMail(contactForm) {
     return false; // To block from loading a new page
 }
 
-function sendMailFeedback(contactForm) {
+function sendMailFeedback(contactFormFeedback) {
 
     emailjs.send("default_service", "template_KJuK8WhN", {
-            "from_name": contactForm.name.value,
-            "from_email": contactForm.email.value,
-            "feedbackprojectname": contactForm.feedbackprojectname.value,
-            "from_mobile": contactForm.mobile.value,
-            "whatdidyoulike": contactForm.whatdidyoulike.value,
-            "whatdidntyoulike": contactForm.whatdidntyoulike.value,
-            "whatshouldiadd": contactForm.whatshouldiadd.value,
-            "whatshouldiremove": contactForm.whatshouldiremove.value
+            "from_name": contactFormFeedback.name.value,
+            "from_email": contactFormFeedback.email.value,
+            "feedbackprojectname": contactFormFeedback.feedbackprojectname.value,
+            "from_mobile": contactFormFeedback.mobile.value,
+            "whatdidyoulike": contactFormFeedback.whatdidyoulike.value,
+            "whatdidntyoulike": contactFormFeedback.whatdidntyoulike.value,
+            "whatshouldiadd": contactFormFeedback.whatshouldiadd.value,
+            "whatshouldiremove": contactFormFeedback.whatshouldiremove.value
         })
         .then(
             function(response) {
