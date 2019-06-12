@@ -160,7 +160,7 @@ header {
 
 .fixed-feedback {
     position: fixed;
-    color: white;
+    color: black;
     bottom: 10px;
     right: 10px;
     font-size: 20px;
@@ -475,7 +475,7 @@ div#map {
     }
     .fixed-feedback {
         position: fixed;
-        color: white;
+        color: black;
         bottom: 50px;
         right: 50px;
         font-size: 50px;
