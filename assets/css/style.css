@@ -164,6 +164,10 @@ header {
     bottom: 10px;
     right: 10px;
     font-size: 20px;
+    transition: ease-in-out 0.5s;
+    -moz-transition: ease-in-out 0.5s;
+    -webkit-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s;
 }
 
 .fixed-feedback:hover {
@@ -172,6 +176,10 @@ header {
     bottom: 10px;
     right: 10px;
     font-size: 20px;
+    transition: ease-in-out 0.5s;
+    -moz-transition: ease-in-out 0.5s;
+    -webkit-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s;
 }
 
 h1,
@@ -466,21 +474,29 @@ div#map {
         max-width: 50%;
     }
     .fixed-feedback {
-    position: fixed;
-    color: white;
-    bottom: 50px;
-    right: 50px;
-    font-size: 50px;
-    text-decoration: none;
-}
+        position: fixed;
+        color: white;
+        bottom: 50px;
+        right: 50px;
+        font-size: 50px;
+        text-decoration: none;
+        transition: ease-in-out 0.5s;
+        -moz-transition: ease-in-out 0.5s;
+        -webkit-transition: ease-in-out 0.5s;
+        -o-transition: ease-in-out 0.5s;
+    }
     .fixed-feedback:hover {
-    position: fixed;
-    color: red;
-    bottom: 50px;
-    right: 50px;
-    font-size: 50px;
-    text-decoration: none;
-}
+        position: fixed;
+        color: red;
+        bottom: 50px;
+        right: 50px;
+        font-size: 50px;
+        text-decoration: none;
+        transition: ease-in-out 0.5s;
+        -moz-transition: ease-in-out 0.5s;
+        -webkit-transition: ease-in-out 0.5s;
+        -o-transition: ease-in-out 0.5s;
+    }
 }
 
 /*----------------------------------------------------------------------------------------------------*/
