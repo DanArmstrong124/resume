@@ -180,6 +180,11 @@ header {
 
 /*----------------------------------------------------------------------------------------------------Special Text/Paddings/Margins*/
 
+.link-remover {
+    color: black!important;
+    text-decoration: none;
+}
+
 .fixed-feedback {
     position: fixed;
     color: black;
