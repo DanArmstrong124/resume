@@ -162,17 +162,17 @@ header {
     text-decoration: underline;   
 }
 
-.progress-section h3 {
+.simontitle {
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
-.progress-section img {
+.simonimg {
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
-.progress-section iframe {
+.simonvideo {
     margin-bottom: 20px;
 }
 
